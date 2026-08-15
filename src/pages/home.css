@@ -19,6 +19,7 @@ html {
 /* =========================================
    1. HERO SECTION
    ========================================= */
+
 .hero-section {
   position: relative;
   width: 100%;
@@ -28,7 +29,7 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #1a1a1a; /* Clean fallback background */
+  background-color: #1a1a1a;
 }
 
 .hero-bg-image {
@@ -42,9 +43,12 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 1;
+
+  /* Improve rendering */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
-/* White tint / overlay completely removed */
 .hero-overlay {
   display: none !important;
 }
@@ -80,7 +84,9 @@ html {
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.3px;
-  transition: background-color 0.25s ease, transform 0.2s ease;
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -92,6 +98,7 @@ html {
 /* =========================================
    2. INTRO BANNER SECTION
    ========================================= */
+
 .intro-section {
   background-color: #ffffff;
   padding: 60px 24px 50px;
@@ -114,6 +121,7 @@ html {
 /* =========================================
    3. HOW IT WORKS SECTION
    ========================================= */
+
 .how-it-works-section {
   background-color: #f8f1e4;
   padding: 75px 24px 85px;
@@ -164,6 +172,7 @@ html {
 }
 
 /* 3 Step Cards */
+
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -208,6 +217,7 @@ html {
 /* =========================================
    4. EXAMPLES GALLERY SECTION
    ========================================= */
+
 .examples-section {
   background-color: #ffffff;
   padding: 75px 24px 95px;
@@ -239,7 +249,10 @@ html {
   height: 210px;
   overflow: hidden;
   background-color: #f0f0f0;
+  position: relative;
 }
+
+/* Optimized gallery images */
 
 .image-wrapper img {
   width: 100%;
@@ -247,6 +260,10 @@ html {
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
+
+  /* Better image rendering */
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .gallery-card:hover .image-wrapper img {
@@ -270,6 +287,7 @@ html {
 /* =========================================
    MOBILE RESPONSIVE
    ========================================= */
+
 @media (max-width: 768px) {
   .hero-section {
     height: 310px;
@@ -278,7 +296,6 @@ html {
     padding-bottom: 0;
   }
 
-  /* Zoom image slightly to crop out the bottom smoke if it is inside the image asset */
   .hero-bg-image {
     background-position: center top;
   }
