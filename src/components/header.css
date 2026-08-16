@@ -3,7 +3,7 @@
 .site-header {
   width: 100%;
   background-color: #3d0a12;
-  padding-top: 4px;
+  padding-top: 2px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
 
 /* Desktop Logo Styling */
 .header-logo-wrapper {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
 }
@@ -37,19 +37,20 @@
   max-width: 80px;
   height: auto;
   display: block;
-  margin-bottom: 6px;
+  margin: 8px;
   object-fit: contain;
 }
 
 .logo-title {
+  padding-bottom: 5px;
   font-family: 'Cinzel', 'Montserrat', serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 4px;
   color: #f3e6c8;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 /* Hide Mobile Elements on Desktop */
@@ -79,12 +80,12 @@
 
 .nav-item {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .nav-item > a {
   font-family: 'Cormorant Garamond', 'Cinzel', Georgia, serif;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 500;
   color: #f3e6c8;
   text-decoration: none;
