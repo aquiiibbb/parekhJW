@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import image from '../assets/1.jpg';
 
 function Home() {
   const repairServices = [
@@ -61,13 +62,17 @@ function Home() {
 
   return (
     <div className="home-page">
+
       {/* 1. Hero Section */}
       <section className="hero-section">
         <div className="hero-bg-image"></div>
         <div className="hero-overlay"></div>
 
         <div className="hero-content">
-          <h1 className="hero-title">Jewellery Repairs by Post</h1>
+          <h1 className="hero-title">
+            Expert Jewellery Repairs & Restoration
+          </h1>
+
           <a href="#how-it-works" className="hero-btn">
             Find out more
           </a>
@@ -78,12 +83,13 @@ function Home() {
       <section className="intro-section">
         <div className="intro-container">
           <p>
-            Jewellery repairs and alterations by post. I can repair most items
-            of Gold, Platinum &amp; Silver using traditional goldsmithing
-            techniques and modern laser welding. I offer a postal only service
-            with competitive prices for all sorts of repairs, restorations and
-            plating. Post your jewellery to me by insured tracked post and I
-            will professionally restore or repair it.
+            At Parekh Jewellers, we provide professional jewellery repairs
+            and alterations for Gold, Platinum and Silver jewellery. Our
+            experienced craftsmen combine traditional goldsmithing techniques
+            with modern craftsmanship to carefully restore and repair your
+            treasured pieces. From everyday repairs to detailed restorations
+            and plating, we take pride in delivering quality workmanship and
+            personal service.
           </p>
         </div>
       </section>
@@ -91,71 +97,82 @@ function Home() {
       {/* 3. How It Works Section */}
       <section className="how-it-works-section" id="how-it-works">
         <div className="how-it-works-container">
-          <h2 className="section-title">How It Works</h2>
+
+          <h2 className="section-title">
+            How Our Jewellery Repair Service Works
+          </h2>
 
           <div className="how-it-works-text">
+
             <p>
-              I offer a free no obligation quote for all your jewellery
-              repairs. Send me a few photos and I will send you an estimate of
-              the repair cost. Should anything change when I have inspected
-              the item I will contact you before proceeding. If you don’t want
-              to go ahead I will return it free of charge by Insured &amp;
-              Tracked Post.
+              We offer a free, no-obligation quote for your jewellery repair.
+              Simply send us a few clear photos of your jewellery and our team
+              will provide you with an estimate of the repair cost. Once we
+              have inspected the item, if anything changes regarding the
+              repair or price, we will contact you before any work begins.
             </p>
 
             <p>
-              I always have a lot of work on so if you are in a rush for a
-              repair please tell me beforehand so we can agree a time frame.
+              We understand that some jewellery repairs may be urgent. If you
+              need your jewellery repaired within a particular timeframe,
+              please let us know beforehand so that we can discuss the
+              estimated completion time with you.
             </p>
 
             <p className="credentials">
-              I am a{' '}
+              Our expertise is built on professional knowledge and quality
+              craftsmanship. We are a{' '}
               <a href="#gia" className="gold-link">
-                GIA qualified Jeweller
+                GIA Qualified Jeweller
               </a>{' '}
               and{' '}
               <a href="#aigs" className="gold-link">
                 AIGS Accredited Gemologist
               </a>
+              .
             </p>
 
             <p className="repair-types">
-              <strong>What I repair:</strong>
+              <strong>What We Repair:</strong>
               <br />
-              I repair jewellery made from gold, silver and platinum, including
-              rings, bracelets, fine chains and pendants. I do not repair
-              watches or sun glasses.
+              We repair jewellery made from Gold, Silver and Platinum,
+              including rings, bracelets, fine chains and pendants. Our
+              services include jewellery repairs, resizing, restoration,
+              catches, plating and other professional jewellery alterations.
             </p>
+
           </div>
 
           {/* 3 Steps Cards */}
           <div className="steps-grid">
+
             <div className="step-card">
               <div className="step-badge">1</div>
               <p>
-                Request an estimate{' '}
+                Send us a few photos of your jewellery and receive a{' '}
                 <a href="#estimate" className="gold-link">
-                  here
+                  free no-obligation estimate
                 </a>{' '}
-                and attach a few photos of your jewellery
+                for your repair.
               </p>
             </div>
 
             <div className="step-card">
               <div className="step-badge">2</div>
               <p>
-                Send your jewellery to me by Insured mail and I'll message you
-                as soon as it arrives
+                Send your jewellery to us by Insured Mail. We will message you
+                as soon as your jewellery arrives safely.
               </p>
             </div>
 
             <div className="step-card">
               <div className="step-badge">3</div>
               <p>
-                I will professionally repair your jewellery and return it by
-                Tracked Mail
+                We will professionally repair your jewellery and return it to
+                you safely by Tracked Mail.
               </p>
             </div>
+
           </div>
         </div>
       </section>
@@ -163,13 +180,18 @@ function Home() {
       {/* 4. Examples Gallery Section */}
       <section className="examples-section">
         <div className="examples-container">
+
           <h2 className="section-title">
-            A Few Examples Of My Repair Services
+            A Few Examples Of Our Repair Services
           </h2>
 
           <div className="gallery-grid">
             {repairServices.map((item, index) => (
-              <a href={item.link} key={index} className="gallery-card">
+              <a
+                href={item.link}
+                key={index}
+                className="gallery-card"
+              >
                 <div className="image-wrapper">
                   <img
                     src={item.image}
@@ -180,12 +202,16 @@ function Home() {
                   />
                 </div>
 
-                <h3 className="card-title">{item.title}</h3>
+                <h3 className="card-title">
+                  {item.title}
+                </h3>
               </a>
             ))}
           </div>
+
         </div>
       </section>
+
     </div>
   );
 }
