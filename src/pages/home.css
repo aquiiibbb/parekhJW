@@ -23,18 +23,14 @@ html {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 600px;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   background-color: #1a1a1a;
 }
-
-/* HERO BACKGROUND */
 
 .hero-bg-image {
   position: absolute;
@@ -47,13 +43,13 @@ html {
   background-image: url('../assets/1.jpg');
 
   /*
-    Desktop:
-    Top position rakha hai taaki image ke upper
-    portion me jo Parekh Jewellers ka logo hai
-    wo crop na ho.
+    DESKTOP ONLY:
+    Thoda upar rakha hai taaki Parekh Jewellers
+    ka logo cut na ho, lekin image bahut niche
+    bhi na aaye.
   */
   background-size: cover;
-  background-position: center top;
+  background-position: center 42%;
   background-repeat: no-repeat;
 
   z-index: 1;
@@ -62,13 +58,9 @@ html {
   will-change: transform;
 }
 
-/* HERO OVERLAY */
-
 .hero-overlay {
   display: none !important;
 }
-
-/* HERO CONTENT */
 
 .hero-content {
   position: relative;
@@ -81,8 +73,6 @@ html {
   gap: 24px;
   padding: 0 20px;
 }
-
-/* HERO TITLE */
 
 .hero-title {
   font-family: 'Cormorant Garamond', Georgia, serif;
@@ -99,8 +89,6 @@ html {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
-/* HERO BUTTON */
-
 .hero-btn {
   display: inline-block;
 
@@ -116,7 +104,6 @@ html {
   font-weight: 500;
 
   text-decoration: none;
-
   letter-spacing: 0.3px;
 
   transition:
@@ -137,9 +124,7 @@ html {
 
 .intro-section {
   background-color: #ffffff;
-
   padding: 60px 24px 50px;
-
   text-align: center;
 }
 
@@ -150,13 +135,9 @@ html {
 
 .intro-container p {
   font-size: 15px;
-
   line-height: 1.9;
-
   color: #4a4a4a;
-
   font-weight: 400;
-
   letter-spacing: 0.2px;
 }
 
@@ -166,9 +147,7 @@ html {
 
 .how-it-works-section {
   background-color: #f8f1e4;
-
   padding: 75px 24px 85px;
-
   text-align: center;
 }
 
@@ -176,8 +155,6 @@ html {
   max-width: 1000px;
   margin: 0 auto;
 }
-
-/* SECTION TITLE */
 
 .section-title {
   font-family: 'Cormorant Garamond', Georgia, serif;
@@ -192,11 +169,8 @@ html {
   letter-spacing: 0.5px;
 }
 
-/* HOW IT WORKS TEXT */
-
 .how-it-works-text p {
   font-size: 15px;
-
   line-height: 1.85;
 
   color: #3b3b3b;
@@ -208,17 +182,13 @@ html {
 
 .credentials {
   margin-top: 25px;
-
   font-weight: 500 !important;
 }
 
 .repair-types {
   margin-top: 35px;
-
   margin-bottom: 45px !important;
 }
-
-/* GOLD LINK */
 
 .gold-link {
   color: #56101b;
@@ -264,8 +234,6 @@ html {
   background-color: transparent;
 }
 
-/* STEP BADGE */
-
 .step-badge {
   width: 50px;
   height: 50px;
@@ -273,7 +241,6 @@ html {
   border-radius: 50%;
 
   background-color: #4a0e1a;
-
   color: #ffffff;
 
   display: flex;
@@ -315,7 +282,6 @@ html {
 
 .examples-container {
   max-width: 1050px;
-
   margin: 0 auto;
 }
 
@@ -341,7 +307,6 @@ html {
 
 .image-wrapper {
   width: 100%;
-
   height: 210px;
 
   overflow: hidden;
@@ -370,13 +335,10 @@ html {
   transform: scale(1.05);
 }
 
-/* CARD TITLE */
-
 .card-title {
   font-family: 'Cormorant Garamond', Georgia, serif;
 
   font-size: 22px;
-
   font-weight: 600;
 
   color: #1a1a1a;
@@ -402,10 +364,6 @@ html {
     height: 500px;
   }
 
-  .hero-bg-image {
-    background-position: center top;
-  }
-
   .hero-title {
     font-size: 56px;
   }
@@ -421,9 +379,7 @@ html {
 
 @media (max-width: 768px) {
 
-  /* =========================
-     HERO
-     ========================= */
+  /* HERO */
 
   .hero-section {
     height: 270px;
@@ -436,11 +392,10 @@ html {
 
   .hero-bg-image {
     /*
-      Mobile par center positioning better rahegi
-      taaki main subject properly visible rahe.
+      Mobile me desktop wali 42% positioning
+      apply nahi hogi.
     */
     background-position: center center;
-
     background-size: cover;
   }
 
@@ -466,9 +421,7 @@ html {
     display: none !important;
   }
 
-  /* =========================
-     INTRO
-     ========================= */
+  /* INTRO */
 
   .intro-section {
     padding: 38px 20px;
@@ -482,9 +435,7 @@ html {
     color: #4a4a4a;
   }
 
-  /* =========================
-     HOW IT WORKS
-     ========================= */
+  /* HOW IT WORKS */
 
   .how-it-works-section {
     padding: 45px 20px 55px;
@@ -506,9 +457,7 @@ html {
     margin-bottom: 18px;
   }
 
-  /* =========================
-     STEPS
-     ========================= */
+  /* STEPS */
 
   .steps-grid {
     grid-template-columns: 1fr;
@@ -518,9 +467,7 @@ html {
     margin-top: 30px;
   }
 
-  /* =========================
-     GALLERY
-     ========================= */
+  /* GALLERY */
 
   .gallery-grid {
     grid-template-columns: 1fr;
