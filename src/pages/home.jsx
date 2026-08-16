@@ -69,7 +69,7 @@ function Home() {
 
         <div className="hero-content">
           <h1 className="hero-title">
-            Expert Jewelery Repairs & Restoration
+           Jewelery Repairs by Post
           </h1>
 
           <a href="#how-it-works" className="hero-btn">
