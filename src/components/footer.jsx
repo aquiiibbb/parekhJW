@@ -38,10 +38,10 @@ function Footer() {
             Email: <a href="mailto:parekhtnv@gmail.com">parekhtnv@gmail.com</a>
           </p>
           <p className="footer-text">
-            Web: <a href="https://parekhjeweller.com" target="_blank" rel="noopener noreferrer">parekhjeweller.com</a>
+            Web: <a href="https://parekhjeweler.com" target="_blank" rel="noopener noreferrer">parekhjeweler.com</a>
           </p>
           <div className="footer-address">
-            <p>Parekh Jewellers</p>
+            <p>Parekh Jewelers</p>
             <p>10010 Coit Road 300</p>
             <p>Frisco, TX 75030</p>
           </div>
@@ -85,7 +85,7 @@ function Footer() {
 
       {/* Footer Bottom Bar */}
       <div className="footer-bottom">
-        <p className="copyright">&copy; 2026 Parekh Jewellers. Trusted Legacy. Timeless Beauty.</p>
+        <p className="copyright">&copy; 2026 Parekh Jewelers. Trusted Legacy. Timeless Beauty.</p>
         <p className="legal-links">
           <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-conditions">Terms &amp; Conditions</a>
         </p>

@@ -16,17 +16,17 @@ function Header() {
 
   return (
     <header className="site-header">
-      {/* Top Bar */}
+      {/* Top Bar / Brand Container */}
       <div className="header-top-bar">
-        {/* Centered Logo & Title */}
+        {/* Left-Aligned Logo & Name (Stacked) */}
         <div className="header-logo-wrapper">
           <a href="/" className="logo-link" onClick={closeMobileMenu}>
             <img 
               src={logo} 
-              alt="PAREKH JEWELLERS" 
+              alt="PAREKH JEWELERS" 
               className="header-logo"
             />
-            <span className="logo-title">PAREKH JEWELLERS</span>
+            <span className="logo-title">PAREKH JEWELERS</span>
           </a>
         </div>
 
@@ -59,7 +59,7 @@ function Header() {
               REPAIR SERVICES
             </a>
 
-            {/* 3-Column Dropdown Panel */}
+            {/* 3-Column Dropdown Panel (Aligned Right) */}
             <div className={`mega-menu ${isDropdownOpen ? 'show' : ''}`}>
               <div className="mega-menu-content">
                 <div className="menu-column">

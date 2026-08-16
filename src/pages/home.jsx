@@ -1,7 +1,6 @@
 import React from 'react';
 import './home.css';
 import image from '../assets/1.jpg';
-
 function Home() {
   const repairServices = [
     {
@@ -70,7 +69,7 @@ function Home() {
 
         <div className="hero-content">
           <h1 className="hero-title">
-            Expert Jewellery Repairs & Restoration
+            Expert Jewelery Repairs & Restoration
           </h1>
 
           <a href="#how-it-works" className="hero-btn">
@@ -83,8 +82,8 @@ function Home() {
       <section className="intro-section">
         <div className="intro-container">
           <p>
-            At Parekh Jewellers, we provide professional jewellery repairs
-            and alterations for Gold, Platinum and Silver jewellery. Our
+            At Parekh Jewelers, we provide professional jewelery repairs
+            and alterations for Gold, Platinum and Silver jewelery. Our
             experienced craftsmen combine traditional goldsmithing techniques
             with modern craftsmanship to carefully restore and repair your
             treasured pieces. From everyday repairs to detailed restorations
@@ -99,22 +98,22 @@ function Home() {
         <div className="how-it-works-container">
 
           <h2 className="section-title">
-            How Our Jewellery Repair Service Works
+            How Our Jewelery Repair Service Works
           </h2>
 
           <div className="how-it-works-text">
 
             <p>
-              We offer a free, no-obligation quote for your jewellery repair.
-              Simply send us a few clear photos of your jewellery and our team
+              We offer a free, no-obligation quote for your jewelery repair.
+              Simply send us a few clear photos of your jewelery and our team
               will provide you with an estimate of the repair cost. Once we
               have inspected the item, if anything changes regarding the
               repair or price, we will contact you before any work begins.
             </p>
 
             <p>
-              We understand that some jewellery repairs may be urgent. If you
-              need your jewellery repaired within a particular timeframe,
+              We understand that some jewelery repairs may be urgent. If you
+              need your jewelery repaired within a particular timeframe,
               please let us know beforehand so that we can discuss the
               estimated completion time with you.
             </p>
@@ -123,7 +122,7 @@ function Home() {
               Our expertise is built on professional knowledge and quality
               craftsmanship. We are a{' '}
               <a href="#gia" className="gold-link">
-                GIA Qualified Jeweller
+                GIA Qualified Jewelers
               </a>{' '}
               and{' '}
               <a href="#aigs" className="gold-link">
@@ -135,10 +134,10 @@ function Home() {
             <p className="repair-types">
               <strong>What We Repair:</strong>
               <br />
-              We repair jewellery made from Gold, Silver and Platinum,
+              We repair jewelery made from Gold, Silver and Platinum,
               including rings, bracelets, fine chains and pendants. Our
-              services include jewellery repairs, resizing, restoration,
-              catches, plating and other professional jewellery alterations.
+              services include jewelery repairs, resizing, restoration,
+              catches, plating and other professional jewelery alterations.
             </p>
 
           </div>
@@ -149,7 +148,7 @@ function Home() {
             <div className="step-card">
               <div className="step-badge">1</div>
               <p>
-                Send us a few photos of your jewellery and receive a{' '}
+                Send us a few photos of your jewelery and receive a{' '}
                 <a href="#estimate" className="gold-link">
                   free no-obligation estimate
                 </a>{' '}
@@ -160,15 +159,15 @@ function Home() {
             <div className="step-card">
               <div className="step-badge">2</div>
               <p>
-                Send your jewellery to us by Insured Mail. We will message you
-                as soon as your jewellery arrives safely.
+                Send your jewelery to us by Insured Mail. We will message you
+                as soon as your jewelery arrives safely.
               </p>
             </div>
 
             <div className="step-card">
               <div className="step-badge">3</div>
               <p>
-                We will professionally repair your jewellery and return it to
+                We will professionally repair your jewelery and return it to
                 you safely by Tracked Mail.
               </p>
             </div>
@@ -215,5 +214,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
